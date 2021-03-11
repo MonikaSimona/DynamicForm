@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.App{
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form{
+  
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 100px;
+  
+  
+}
+form{
+  position: relative;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.048);
+  height: auto;
+  box-shadow: 3px 3px 4px -3px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  padding-bottom: 50px;
+}
+input, select{
+  margin: 10px;
+  width: 100%;
+  border:1px solid lightgray;
+  
+}
+input[type=radio], input[type=checkbox]{
+  margin-left: -30px;
+  width: fit-content;
+}
+
+label{
+  font-weight: bold;
+  font-size:0.9rem;
+  width: 150px;
+}
+button{
+  width: 50px;
+  padding: 3px 5px;
   color: white;
+  background-color: orange;
+  border: none;
+  margin: 10px;
+  position: absolute;
+  left: 110px;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.form_field{
+  display: flex;
+  align-items: center;
 }
+.overlay{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+background-color: lightgray;
+opacity: 0.6;
+}
+.fail{
+  color: rgb(189, 4, 4);
+}
+.success{
+ color: green;
+}
+.message{
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  
 }
